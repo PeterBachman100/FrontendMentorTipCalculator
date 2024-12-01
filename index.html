@@ -15,14 +15,84 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <h1>Spli<br />tter</h1>
+    <main>
+      <!-- LEFT SIDE -->
+      <section class="input">
+        <!-- Bill -->
+        <div>
+          <label>Bill</label>
+          <input type="number" placeholder="0.00" />
+        </div>
+        <!-- Select Tip -->
+        <fieldset>
+          <legend>Select Tip %</legend>
+          <label>
+            <input type="radio" name="tip-percent" value="5" />
+            5%
+          </label>
+          <label>
+            <input type="radio" name="tip-percent" value="10" />
+            10%
+          </label>
+          <label>
+            <input type="radio" name="tip-percent" value="15" checked />
+            15%
+          </label>
+          <label>
+            <input type="radio" name="tip-percent" value="25" />
+            25%
+          </label>
+          <label>
+            <input type="radio" id="50-percent" name="tip-percent" value="50" />
+            50%
+          </label>
+          <label for="custom-percent">
+            <input
+              type="radio"
+              id="custom-percent"
+              name="tip-percent"
+              value="100"
+            />
+            Custom
+          </label>
+        </fieldset>
+        <!-- Number of People -->
+        <label>
+          <span>Number of People</span>
+          <input type="number" placeholder="1" />
+        </label>
+        <div></div>
+      </section>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      <!-- RIGHT SIDE -->
+      <section class="output">
+        <!-- TOP -->
+        <div class="output-tipAndTotal">
+          <!-- Tip / person -->
+          <div class="output-tip">
+            <!-- Left side / label -->
+            <div>
+              <span><strong>Tip Amount</strong></span>
+              <span>/ person</span>
+            </div>
+            <!-- Right side / result -->
+            <span>$0.00</span>
+          </div>
+          <!-- Total / person -->
+          <div class="output-total">
+            <!-- Left side / label -->
+            <div>
+              <span><strong>Total</strong></span>
+              <span>/ person</span>
+            </div>
+            <!-- Right side / result -->
+            <span>$0.00</span>
+          </div>
+        </div>
+        <!-- RESET BUTTON -->
+        <button class="reset">Reset</button>
+      </section>
+    </main>
   </body>
 </html>
